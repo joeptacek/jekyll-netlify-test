@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <h1>Page Title: {{ page.title }}</h1>
+  <hr />
+  <h2>Site Pages</h2>
+  <ul>
+    {% for page in site.pages %}
+      <li>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <hr />
+  <h2>Page Content</h2>
+  {{ content }}
+</body>
+
+</html>

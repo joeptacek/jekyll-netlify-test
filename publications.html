@@ -1,0 +1,12 @@
+---
+layout: default
+title: Publications
+---
+<p>Here is a list of our publications</p>
+<ul>
+  {% for publication in site.publications %}
+    <li>
+      {{ publication.title }}, {{ publication.authors }}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,10 @@
+collections:
+- publications
+
+defaults:
+- scope:
+    path: ""
+    type: publications
+  values:
+    title: Article Title
+    authors: Lastname, F.M., Lastname, F.M., & Lastname, F.M.
