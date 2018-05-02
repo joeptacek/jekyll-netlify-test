@@ -16,3 +16,4 @@ collections:
       - {label: "Authors", name: "authors", widget: "string"}
       - {label: "New Field (Added to config)", name: "newfield", widget: "string"}
       - {label: "Bool", name: "bool", widget: "boolean", default: true}
+      - {label: "STR", name: "str", widget: "string", default: "abcde"}
