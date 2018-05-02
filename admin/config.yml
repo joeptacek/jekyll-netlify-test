@@ -25,8 +25,14 @@ collections:
     format: yml
     fields:
     - name: "postdoctoral-researchers"
-    - label: "Postdoctoral Researchers"
-    - widget: "list"
-    - fields:
+      label: "Postdoctoral Researchers"
+      widget: "list"
+      fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Email", name: "Email", widget: "string"}
+    - name: "staff"
+      label: "Staff"
+      widget: "list"
+      fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Email", name: "Email", widget: "string"}
