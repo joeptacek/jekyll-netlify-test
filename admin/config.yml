@@ -15,3 +15,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Authors", name: "authors", widget: "string"}
       - {label: "New Field (Added to config)", name: "newfield", widget: "string"}
+      - {label: "Bool", name: "bool", widget: "boolean", default: true}
