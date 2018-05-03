@@ -1,12 +1,5 @@
-- name: Steve Weisberg
-  category: postdoctoral_researcher
-  email: st@gm.com
-  photo: null
-- name: Joe Ptacek
-  category: staff
-  email: jp@gm.com
-  photo: null
-- name: Eileen Cardillo
-  category: staff
-  email: ec@gm.com
-  photo: null
+people_list:
+  - category: Staff
+    email: jp@email.com
+    name: Joe Ptacek
+    photo: /assets/img/netlify-uploads/joe.jpg
