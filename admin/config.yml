@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
-media_folder: "assets/img/uploads" # Media files will be stored in the repo under assets/img/uploads
+media_folder: "assets/img/netlify-uploads" # Media files will be stored in the repo under assets/img/uploads
 collections:
 - name: "publications" # Used in routes, e.g., /admin/collections/blog
   label: "Publications" # Used in the UI
@@ -19,20 +19,45 @@ collections:
   label_singular: "Page"
   files:
   - name: "people"
-    label: "People"
+    label: "People Page"
     file: "_data/pages/people.yml"
     extension: yml
     format: yml
     fields:
-    - name: "postdoctoral-researchers"
-      label: "Postdoctoral Researchers"
+    - name: "people_list"
+      label: "People List"
       widget: "list"
       fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Email", name: "Email", widget: "string"}
-    - name: "staff"
-      label: "Staff"
+      - {name: "name", label: "Name", widget: "string"}
+      - {name: "category", label: "Category", widget: "string"} # add validation
+      - {name: "email", label: "Email", widget: "string"}
+      - {name: "photo", label: "Photo", widget: "image"}
+  - name: "research"
+    label: "Research Page"
+    file: "_data/pages/research.yml"
+    extension: yml
+    format: yml
+    fields:
+    - {name: "about_language_and_space", label: "About Language and Space", widget: "string"}
+    - {name: "about_event_representation", label: "About Event Representation", widget: "string"}
+    - {name: "about_neuroaesthetics", label: "About Neuroaesthetics", widget: "string"}
+    - {name: "about_neuroethics", label: "About Neuroethics", widget: "string"}
+    - {name: "about_miscellaneous", label: "About Miscellaneous", widget: "string"}
+    - name: "publications_list"
+      label: "Publications List"
       widget: "list"
       fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Email", name: "Email", widget: "string"}
+      - {name: "title", label: "Title", widget: "string"}
+      - {name: "authors", label: "Authors", widget: "string"}
+  - name: "news"
+    label: "News Page"
+    file: "_data/pages/news.yml"
+    extension: yml
+    format: yml
+    fields:
+    - name: "news_list"
+      label: "News List"
+      widget: "list"
+      fields:
+      - {name: "title", label: "Title", widget: "string"}
+      - {name: "source", label: "Source", widget: "string"}
