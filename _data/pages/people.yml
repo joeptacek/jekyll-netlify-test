@@ -1,5 +1,10 @@
+# is title necessary?
 people_list:
   - category: Staff
     email: jp@email.com
     name: Joe Ptacek
-    photo: /assets/img/netlify-uploads/joe.jpg
+    photo: /assets/img/people/joe.jpg
+  - category: Staff
+    email: ec@email.com
+    name: Eileen Cardillo
+    photo: /assets/img/people/eileen.jpg

@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
-media_folder: "assets/img/netlify-uploads" # Media files will be stored in the repo under assets/img/uploads
+media_folder: "assets/img/netlify-uploads" # subfolders not supported (yet); after uploading, need to manually move assets and update URL
 collections:
 - name: "pages"
   label: "Pages"
@@ -21,7 +21,6 @@ collections:
       - {name: "name", label: "Name", widget: "string"}
       - {name: "category", label: "Category", widget: "string"}
       - {name: "email", label: "Email", widget: "string"}
-      - {name: "photo", label: "Photo", widget: "image"}
   - name: "research"
     label: "Research Page"
     file: "_data/pages/research.yml"
